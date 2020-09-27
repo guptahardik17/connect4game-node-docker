@@ -3,8 +3,8 @@
 ### Live Instance (temporary)
 Currently this api service is deployed on Amazon EC2.
 ```sh
-BASE URL:  35.154.4.151
-Alternate BASE URL:  ec2-35-154-4-151.ap-south-1.compute.amazonaws.com
+BASE URL:  http://35.154.4.151
+Alternate BASE URL:  http://ec2-35-154-4-151.ap-south-1.compute.amazonaws.com
 Endpoints (Details are mentioned below): 
     - /play
     - /moves
