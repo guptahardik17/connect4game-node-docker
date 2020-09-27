@@ -1,0 +1,49 @@
+version: "3.2"
+services:
+  mysql:
+    image: "mysql:5.7"
+    command: --default-authentication-plugin=mysql_native_password
+    restart: on-failure:2
+    environment:
+      - MYSQL_ROOT_PASSWORD=connect4game
+      - MYSQL_DATABASE=connect4game
+      - MYSQL_USER=connect4game
+      - MYSQL_PASSWORD=connect4game
+    ports:
+      - "3305:3306"
+    container_name: mysql-container
+  api:
+    depends_on:
+      - mysql
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "80:4000"
+    restart: on-failure:10
+    volumes:
+      - ./www/:/var/www/html/
+    environment:
+      - APP_URL=http://localhost:3000
+      - APP_PORT=4000
+      - NODE_ENV=development
+      - DB_CONNECTION=mysql
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_DATABASE=connect4game
+      - DB_USERNAME=connect4game
+      - DB_PASSWORD=connect4game
+    container_name: api-container
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:4.7
+    depends_on:
+      - mysql
+    ports:
+      - "30002:80"
+    restart: on-failure:2
+    volumes:
+      - /sessions
+    environment:
+      - PMA_HOST=mysql
+      - PMA_PORT= 3306
+    container_name: phpmyadmin-container
