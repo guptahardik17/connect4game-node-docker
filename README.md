@@ -46,11 +46,11 @@ $ docker-compose up --build
 ```
 
 ### Screenshots
-<img src="https://he-s3.s3.amazonaws.com/media/uploads/c5cbc5d.png" width="400">
-<img src="https://he-s3.s3.amazonaws.com/media/uploads/bfc6671.png" width="400">
+<img src="https://he-s3.s3.amazonaws.com/media/uploads/c5cbc5d.png" width="600">
+<img src="https://he-s3.s3.amazonaws.com/media/uploads/bfc6671.png" width="600">
 
-<img src="https://he-s3.s3.amazonaws.com/media/uploads/8e9888e.png" width="400">
-<img src="https://he-s3.s3.amazonaws.com/media/uploads/b7b2b37.png" width="400">
+<img src="https://he-s3.s3.amazonaws.com/media/uploads/8e9888e.png" width="600">
+<img src="https://he-s3.s3.amazonaws.com/media/uploads/b7b2b37.png" width="600">
 
-<img src="https://he-s3.s3.amazonaws.com/media/uploads/ac26830.png" width="400">
-<img src="https://he-s3.s3.amazonaws.com/media/uploads/992b54b.png" width="400">
+<img src="https://he-s3.s3.amazonaws.com/media/uploads/ac26830.png" width="600">
+<img src="https://he-s3.s3.amazonaws.com/media/uploads/992b54b.png" width="600">
